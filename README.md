@@ -1,1 +1,3 @@
 # O-Recipes
+
+Project with React, Redux, React Router, Babel, Webpack...
