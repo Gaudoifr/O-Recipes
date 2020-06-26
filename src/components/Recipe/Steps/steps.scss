@@ -1,0 +1,30 @@
+@import 'src/styles/vars';
+
+.steps {
+  background-color: $stepsBackground;
+  border-radius: 1rem 1rem 0 0;
+  padding: 2rem;
+  font-size: 1.2em;
+
+  .step {
+    line-height: 1.5;
+    position: relative;
+    padding-left: 1.8em;
+
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/::before
+    /* .step::before */
+    &::before {
+      // content est indispensable (même si c'est content: ""), sinon rien ne s'affiche
+      // content: "♥";
+      content: "";
+      background-color: $mainColor;
+      width: 1.2rem;
+      height: 1px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0.8rem;
+      margin-right: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import 'src/styles/vars';
+
+.page {
+  margin-left: $navWidth;
+
+  .page-title {
+    background-color: $titleBackground;
+    color: #222;
+    padding: 1em;
+    font-weight: bold;
+  }
+
+  .page-content {
+    padding: 1em;
+  }
+}

@@ -1,0 +1,28 @@
+@import 'src/styles/vars';
+
+.nav {
+  width: $navWidth;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: rgb(236, 232, 223);
+  border-right: 4px solid $titleBackground;
+  padding-top: 1em;
+  overflow-y: auto;
+
+  .nav-item {
+    display: block;
+    margin: 1em 1.5em;
+    color: #222;
+    cursor: pointer;
+
+    &:hover {
+      color: #777;
+    }
+
+    &.nav-item-active {
+      color: $mainColor;
+      font-weight: bold;
+    }
+  }
+}
